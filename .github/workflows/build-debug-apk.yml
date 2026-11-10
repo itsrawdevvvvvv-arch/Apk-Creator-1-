@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ANDROID_HOME: /usr/local/lib/android/sdk
+      ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
     steps:
       - uses: actions/checkout@v4
 
@@ -17,19 +20,19 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Install platform + build tools
+      - name: Install Android platform + build tools
         run: |
-          sdkmanager --install "platforms;android-36" "build-tools;36.0.0" "platform-tools" || true
-          yes | sdkmanager --licenses > /dev/null 2>&1 || true
-
-      - name: Make gradlew executable
-        run: chmod +x gradlew
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          if [ ! -x "$SDKMANAGER" ]; then SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f | head -1); fi
+          echo "using $SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses > /dev/null 2>&1 || true
+          "$SDKMANAGER" --install "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+          ls "$ANDROID_HOME/platforms"
 
       - name: Build debug APK
-        run: ./gradlew assembleDebug --no-daemon --stacktrace
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
@@ -38,8 +41,6 @@ jobs:
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
-      - name: Collect build report
+      - name: Build summary
         if: always()
-        run: |
-          echo "## APK build" >> $GITHUB_STEP_SUMMARY
-          ls -la app/build/outputs/apk/debug/ >> $GITHUB_STEP_SUMMARY 2>&1 || true
+        run: ls -la app/build/outputs/apk/debug/ >> $GITHUB_STEP_SUMMARY 2>&1 || true
