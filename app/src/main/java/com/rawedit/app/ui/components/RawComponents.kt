@@ -263,7 +263,7 @@ fun LiquidBottomDock(
                             onSelectTab(tab)
                         },
                     horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalAlignment = Alignment.CenterVertically
+                    verticalArrangement = Arrangement.Center
                 ) {
                     RawIcon(
                         type = tab.icon,
