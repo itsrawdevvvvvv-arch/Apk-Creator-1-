@@ -3,7 +3,6 @@ package com.rawedit.app.ui.theme
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 
 val RawTypography = Typography(
@@ -12,7 +11,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.Black,
         fontSize = 64.sp,
         lineHeight = 58.8.sp, // 0.92x tight brutalist poster stacking
-        letterSpacing = (-0.04).em,
+        letterSpacing = (-2.56).sp,
         color = RawColors.TextPrimary
     ),
     displayMedium = TextStyle(
@@ -20,7 +19,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.Black,
         fontSize = 48.sp,
         lineHeight = 44.sp,
-        letterSpacing = (-0.035).em,
+        letterSpacing = (-1.68).sp,
         color = RawColors.TextPrimary
     ),
     headlineLarge = TextStyle(
@@ -28,7 +27,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.ExtraBold,
         fontSize = 32.sp,
         lineHeight = 30.sp,
-        letterSpacing = (-0.03).em,
+        letterSpacing = (-0.96).sp,
         color = RawColors.TextPrimary
     ),
     headlineMedium = TextStyle(
@@ -36,7 +35,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.Bold,
         fontSize = 22.sp,
         lineHeight = 24.sp,
-        letterSpacing = (-0.02).em,
+        letterSpacing = (-0.44).sp,
         color = RawColors.TextPrimary
     ),
     titleMedium = TextStyle(
@@ -44,7 +43,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.Bold,
         fontSize = 14.sp,
         lineHeight = 18.sp,
-        letterSpacing = 0.12.em,
+        letterSpacing = 1.68.sp,
         color = RawColors.TextPrimary
     ),
     bodyLarge = TextStyle(
@@ -52,7 +51,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.Normal,
         fontSize = 15.sp,
         lineHeight = 21.sp,
-        letterSpacing = 0.em,
+        letterSpacing = 0.sp,
         color = RawColors.TextPrimary
     ),
     bodyMedium = TextStyle(
@@ -60,7 +59,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp,
         lineHeight = 17.sp,
-        letterSpacing = 0.04.em,
+        letterSpacing = 0.48.sp,
         color = RawColors.TextSecondary
     ),
     labelLarge = TextStyle(
@@ -68,7 +67,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.Bold,
         fontSize = 13.sp,
         lineHeight = 16.sp,
-        letterSpacing = 0.14.em,
+        letterSpacing = 1.82.sp,
         color = RawColors.TextPrimary
     ),
     labelMedium = TextStyle(
@@ -76,7 +75,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.Medium,
         fontSize = 11.sp,
         lineHeight = 14.sp,
-        letterSpacing = 0.12.em,
+        letterSpacing = 1.32.sp,
         color = RawColors.TextSecondary
     ),
     labelSmall = TextStyle(
@@ -84,7 +83,7 @@ val RawTypography = Typography(
         fontWeight = FontWeight.Normal,
         fontSize = 10.sp,
         lineHeight = 12.sp,
-        letterSpacing = 0.10.em,
+        letterSpacing = 1.0.sp,
         color = RawColors.TextSecondary
     )
 )
