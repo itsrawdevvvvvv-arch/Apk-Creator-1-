@@ -3,7 +3,7 @@
 # Gradle start up script for POSIX generated for raw_edit v2.
 #
 APP_HOME=$( cd "${0%/*}" && pwd -P ) || exit
-DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+DEFAULT_JVM_OPTS="-Xmx64m -Xms64m"
 WRAPPER_JAR="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
 
 if [ -n "$JAVA_HOME" ] ; then
