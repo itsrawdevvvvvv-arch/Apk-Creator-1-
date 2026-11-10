@@ -1,0 +1,9 @@
+# Beat sheets of the two references (scene order, approx. times from 2.5 s samples)
+## Ref 1: "ElevenLabs ke paise bhar-bhar ke" (AI tool showcase, 44.8 s)
+0.0 cream HOOK: logo card + kicker + big "ELEVEN LABS KE PAISE" + dark pill | 2.5 red INTERRUPT "TOH RUK JAO!" with ghost word + logo card | 5 cream TOOL REVEAL: "VOICE STUDIO" + GitHub card + phone mockup | 7.5 "YE EK OPEN SOURCE" + AI VOICE TOOL pill | 10 "KAAFI TREND" + trending pill |
+12.5-20 FEATURES: step pills "FEATURE 01 VOICE CLONING" ... "FEATURE 04 TRANSCRIPTION", chip row where the active chip lights, phone beside | 20 red "AUR SABSE INTERESTING" | 22.5 "TUMHARA AUDIO DATA DEVICE PAR" + phone-lock icon | 27.5 red "HINDI" + outline "MULTIPLE LANGUAGES" + language chips |
+30 cream "NA HAR KAAM KE LIYE ALAG TOOL" + 3 tool rows | 32.5 "NA SUBSCRIPTION KA JHANJHAT" strike-through + X | 35-40 red CTA "IS TOOL KA LINK CHAHIYE? TOH PAGE KO FOLLOW" then "COMMENT" + typing box "VOICE" + "LINK DM MEIN" chips | 42.5 cream outro "USEFUL AI TOOLS / FOLLOW KARNA MAT BHOOLNA" + Following button, bell, rocket.
+## Ref 2: "Script ka formula" (49.1 s), rebuilt exactly in `template/scenes.js`
+0 cream "KYA? SCRIPT" + doc card + ? badge | 2.5 red "DEKHO, MAIN BATATA HOON IS FORMULA KO" + bulb card | 7.5 cream formula row Hook+Problem+Solution+Result+CTA builds one card at a time | 15 red "BAS! ITNA SAB SUNKAR GHABRANA MAT" + smile |
+17.5 STEP 01 "SABSE PEHLE HOOK 2-3 SECONDS" + timer ring 0:00->0:03 + "AUDIENCE RUK JAAYE" | 25 STEP 02 "PHIR PROBLEM" + ? card | 27.5 STEP 03 "USKE BAAD SOLUTION PROBLEM FIX" + chips PROBLEM -> FIX + bulb card | 35 STEP 04 "AUR BAS RESULT" + check card |
+37.5 red "AAKHIRI AUR SABSE ZYADA IMPORTANT CTA" + Follow/Share buttons | 45 cream "BAS HO GAYA, AB TUM BHI FOLLOW KAR LO!" + Following + bell + particle burst.

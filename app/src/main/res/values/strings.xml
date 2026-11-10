@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">raw_edit</string>
+    <string name="notification_channel_name">Reel Render Engine</string>
+    <string name="notification_channel_desc">Foreground progress for offline 1080p30 reel encoding</string>
+</resources>

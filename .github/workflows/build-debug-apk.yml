@@ -1,0 +1,45 @@
+name: Build Debug APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install platform + build tools
+        run: |
+          sdkmanager --install "platforms;android-36" "build-tools;36.0.0" "platform-tools" || true
+          yes | sdkmanager --licenses > /dev/null 2>&1 || true
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Build debug APK
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-edit-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+
+      - name: Collect build report
+        if: always()
+        run: |
+          echo "## APK build" >> $GITHUB_STEP_SUMMARY
+          ls -la app/build/outputs/apk/debug/ >> $GITHUB_STEP_SUMMARY 2>&1 || true

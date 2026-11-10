@@ -1,0 +1,17 @@
+/* DESIGN TOKENS - measured by eye + pixel sampling from the two reference videos (stage = 1920x1080) */
+@font-face{font-family:"Poppins";font-weight:900;src:local("Poppins Black"),local("Poppins-Black"),url("../fonts/Poppins-Black.ttf")}
+@font-face{font-family:"Poppins";font-weight:800;src:local("Poppins ExtraBold"),local("Poppins-ExtraBold"),url("../fonts/Poppins-ExtraBold.ttf")}
+@font-face{font-family:"Poppins";font-weight:700;src:local("Poppins Bold"),local("Poppins-Bold"),url("../fonts/Poppins-Bold.ttf")}
+@font-face{font-family:"Poppins";font-weight:600;src:local("Poppins SemiBold"),local("Poppins-SemiBold"),url("../fonts/Poppins-SemiBold.ttf")}
+:root{
+  --crimson:#9A0B12; --crimson-deep:#6E0509; --crimson-bg-hi:#A80E15; --crimson-bg-lo:#4A0307;
+  --cream-hi:#F2E5B6; --cream-mid:#E2CF98; --cream-lo:#B8985F;
+  --card:#F4ECD8; --card-edge:#D9CBA3; --ink:#2A0A0A; --ink-soft:#4A1A16;
+  --ghost-on-red:rgba(255,226,200,.13); --ghost-on-cream:rgba(154,11,18,.07);
+  --font:"Poppins","Inter","Arial Black",system-ui,sans-serif;
+  --fs-xl:230px; --fs-l:150px; --fs-m:100px; --fs-kicker:50px; --fs-sub:70px; --fs-pill:34px; --fs-prog:17px;
+  --shadow-cream-text:0 9px 0 rgba(120,80,20,.28);
+  --shadow-red-text:0 8px 22px rgba(0,0,0,.38);
+  --shadow-card:0 40px 70px -20px rgba(80,40,10,.45), 0 6px 14px rgba(80,40,10,.18);
+  --radius-card:64px; --radius-pill:999px;
+}

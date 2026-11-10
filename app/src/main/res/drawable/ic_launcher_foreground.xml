@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Tilted (-8 deg) 3D Retro CRT Television matching photo_6309693960607175911_y.jpg -->
+    <group
+        android:pivotX="54"
+        android:pivotY="56"
+        android:rotation="-8">
+
+        <!-- Bent rabbit-ear antennas + ball tips + dome base -->
+        <path
+            android:strokeColor="#D0D0D0"
+            android:strokeWidth="2.2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M50,29 L44,21 L39,25 L34,21 M60,29 L69,21 L74,25 L80,21" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M34,19.2a1.8,1.8 0 1,1 -0.1,0zM80,19.2a1.8,1.8 0 1,1 -0.1,0z" />
+        <path
+            android:fillColor="#2A2A2A"
+            android:strokeColor="#8A8A8A"
+            android:strokeWidth="1.2"
+            android:pathData="M46,31 C46,26 62,26 62,31 Z" />
+
+        <!-- 3D Right side depth panel -->
+        <path
+            android:fillColor="#181818"
+            android:strokeColor="#484848"
+            android:strokeWidth="1.2"
+            android:pathData="M80,33 L89,40 L86,77 L78,82 Z" />
+        <!-- Side 3-pin port detail -->
+        <path
+            android:fillColor="#0A0A0A"
+            android:strokeColor="#8A8A8A"
+            android:strokeWidth="0.9"
+            android:pathData="M80,74h5v4h-5z" />
+
+        <!-- Outer CRT TV Front Cabinet -->
+        <path
+            android:fillColor="#242424"
+            android:strokeColor="#9A9A9A"
+            android:strokeWidth="1.8"
+            android:pathData="M24,31 L78,31 C81,31 83,33 83,36 L81,79 C81,82 79,84 76,84 L24,82 C21,82 19,80 19,77 L20,35 C20,32 22,31 24,31 Z" />
+
+        <!-- Inner CRT Screen Bezel -->
+        <path
+            android:fillColor="#0A0A0A"
+            android:strokeColor="#C8C8C8"
+            android:strokeWidth="1.6"
+            android:pathData="M24,36 L63,36 L62,76 L23,75 Z" />
+
+        <!-- Right Control Column: Top Indicator Slot -->
+        <path
+            android:fillColor="#0E0E0E"
+            android:pathData="M67,36h11v4h-11z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M72,36.5h1.5v3h-1.5zM75.5,36.5h1.5v3h-1.5z" />
+
+        <!-- Rotary Knob 1 (Upper) -->
+        <path
+            android:fillColor="#8E8E8E"
+            android:strokeColor="#141414"
+            android:strokeWidth="1.2"
+            android:pathData="M72,48a5.2,5.2 0 1,1 -0.1,0z" />
+        <path
+            android:strokeColor="#141414"
+            android:strokeWidth="1.4"
+            android:pathData="M72,48 L75.5,45" />
+
+        <!-- Rotary Knob 2 (Lower) -->
+        <path
+            android:fillColor="#8E8E8E"
+            android:strokeColor="#141414"
+            android:strokeWidth="1.2"
+            android:pathData="M72,60a5.2,5.2 0 1,1 -0.1,0z" />
+        <path
+            android:strokeColor="#141414"
+            android:strokeWidth="1.4"
+            android:pathData="M72,60 L70,56" />
+
+        <!-- 4 Speaker Louver Vents -->
+        <path
+            android:fillColor="#787878"
+            android:pathData="M67,67h10v1.8h-10zM67,70h10v1.8h-10zM67,73h10v1.8h-10zM67,76h10v1.8h-10z" />
+
+        <!-- 3 Bottom Indicator Dots -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M68,80.5a1,1 0 1,1 -0.1,0zM71.5,80.5a1,1 0 1,1 -0.1,0zM75,80.5a1,1 0 1,1 -0.1,0z" />
+
+        <!-- Bold Pixel "RAW" Wordmark inside CRT Screen -->
+        <!-- R -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M27,40h9v2.5h2v5h-2v2.5h2v5h-3.5v-5h-4v5h-3.5zM30.5,42.5v4h4v-4z" />
+        <!-- A -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M40,40h9v15h-3.5v-5h-2v5h-3.5zM43.5,42.5v4h2v-4z" />
+        <!-- W -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M51,40h3v10h1.5v-5h2v5h1.5v-10h3v15h-4v-3.5h-3v3.5h-4z" />
+
+        <!-- Bold Pixel "EDIT" Wordmark inside CRT Screen -->
+        <!-- E -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M27,58h8v2.5h-4.5v2.5h3.5v2.5h-3.5v2.5h4.5v2.5h-8z" />
+        <!-- D -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M37,58h6.5v2.5h2v7.5h-2v2.5h-6.5zM40.5,60.5v7.5h2.5v-7.5z" />
+        <!-- I -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M47.5,58h5.5v2.5h-1.2v7.5h1.2v2.5h-5.5v-2.5h1.2v-7.5h-1.2z" />
+        <!-- T -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54.5,58h7.5v2.5h-2.2v10h-3.1v-10h-2.2z" />
+    </group>
+</vector>
