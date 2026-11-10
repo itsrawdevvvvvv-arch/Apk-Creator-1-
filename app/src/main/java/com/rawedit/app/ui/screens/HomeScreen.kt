@@ -160,10 +160,7 @@ fun HomeScreen(
                 Spacer(modifier = Modifier.height(14.dp))
 
                 Text(
-                    text = "YOUR
-VOICE
-BECOMES
-TYPE.",
+                    text = "YOUR\nVOICE\nBECOMES\nTYPE.",
                     style = MaterialTheme.typography.displayLarge.copy(
                         fontSize = 54.sp,
                         lineHeight = 49.sp

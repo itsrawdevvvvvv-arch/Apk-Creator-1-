@@ -103,12 +103,9 @@ object CodeValidator {
             """.trimIndent()
             val closeBodyIdx = text.lowercase().lastIndexOf("</body>")
             text = if (closeBodyIdx >= 0) {
-                text.substring(0, closeBodyIdx) + "
-" + bridgeScript + "
-" + text.substring(closeBodyIdx)
+                text.substring(0, closeBodyIdx) + "\n" + bridgeScript + "\n" + text.substring(closeBodyIdx)
             } else {
-                text + "
-" + bridgeScript
+                text + "\n" + bridgeScript
             }
         }
 
@@ -275,7 +272,7 @@ object CodeValidator {
                     .removeSurrounding(""")
                     .replace("\\"", """)
                     .replace("\\\\", "\\")
-                if (unescaped.contains(""ok":false")) {
+                if (unescaped.contains("\"ok\":false")) {
                     issues.add(
                         ValidationIssue(
                             rule = "RAW_RUNTIME_ERROR",
@@ -284,11 +281,11 @@ object CodeValidator {
                         )
                     )
                 } else {
-                    val durMatch = Regex(""duration":([0-9.]+)").find(unescaped)
+                    val durMatch = Regex("\"duration\":([0-9.]+)").find(unescaped)
                     if (durMatch != null) {
                         detectedDuration = durMatch.groupValues[1].toDoubleOrNull() ?: fallbackDurationSec
                     }
-                    if (unescaped.contains(""nonBlankCount":0")) {
+                    if (unescaped.contains("\"nonBlankCount\":0")) {
                         issues.add(
                             ValidationIssue(
                                 rule = "BLANK_CANVAS",

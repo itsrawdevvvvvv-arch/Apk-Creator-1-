@@ -151,7 +151,7 @@ object SrtParser {
         for (cue in cues) {
             val startSec = String.format("%.2f", cue.startMs / 1000.0)
             val endSec = String.format("%.2f", cue.endMs / 1000.0)
-            val line = "Cue #${String.format("%03d", cue.index)} | ${startSec}s -> ${endSec}s [${formatTimecode(cue.startMs)} -> ${formatTimecode(cue.endMs)}] | "${cue.text}"\n"
+            val line = "Cue #${String.format("%03d", cue.index)} | ${startSec}s -> ${endSec}s [${formatTimecode(cue.startMs)} -> ${formatTimecode(cue.endMs)}] | \"${cue.text}\"\n"
             val lineBytes = line.toByteArray(Charsets.UTF_8).size
             if (currentBytes + lineBytes > MAX_SNIPPET_BYTES) {
                 sb.append("... (truncated to 60 KB prompt safety cap)\n")

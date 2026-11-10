@@ -488,11 +488,8 @@ class RawEditViewModel(application: Application) : AndroidViewModel(application)
         if (full || html.length <= 4000) return html
         val styleMatch = Regex("<style[\\s\\S]*?</style>", RegexOption.IGNORE_CASE).find(html)?.value ?: ""
         val scriptMatch = Regex("<script[\\s\\S]*?</script>", RegexOption.IGNORE_CASE).findAll(html)
-            .joinToString("
-") { it.value }
-        return (styleMatch + "
-
-" + scriptMatch).ifBlank { html.take(8000) }
+            .joinToString("\n") { it.value }
+        return (styleMatch + "\n\n" + scriptMatch).ifBlank { html.take(8000) }
     }
 
     fun shareFilePath(context: Context, path: String, mimeType: String, chooserTitle: String) {
